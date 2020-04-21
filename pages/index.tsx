@@ -1,5 +1,12 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Link from "next/link";
+import Layout from "../components/Layout";
+import css from "styled-jsx/css";
+
+const styles: string = css`
+  p {
+    border: solid black 3px;
+  }
+`;
 
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
@@ -9,7 +16,8 @@ const IndexPage = () => (
         <a>About</a>
       </Link>
     </p>
+    <style jsx>{styles}</style>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
