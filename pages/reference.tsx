@@ -16,7 +16,7 @@ const styles: string = css`
 `;
 
 // Propsの構造を定義
-interface Props {
+type Props = {
   items: User[];
 }
 
